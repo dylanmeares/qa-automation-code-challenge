@@ -1,0 +1,17 @@
+{
+  "name": "qa-automation-code-challenge",
+  "version": "1.0.0",
+  "description": "QA Automation challenge using Playwright (JavaScript)",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:slow-mo": "SLOW_MO=${SLOW_MO:-500} npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:ecommerce": "npx playwright test tests/ecommerce",
+    "test:file-upload": "npx playwright test tests/file-upload",
+    "test:report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0"
+  }
+}
